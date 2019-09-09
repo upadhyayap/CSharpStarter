@@ -1,6 +1,6 @@
 ﻿using System;
 using CsharpStarter.src.main.Array;
-
+using CsharpStarter.src.main.Types;
 
 namespace CsharpStarter
 {
@@ -11,7 +11,9 @@ namespace CsharpStarter
             // ArrayTest arrayTest = new ArrayTest();
             // arrayTest.printArray();
 
-            
+            TypesDemo typesDemo = new TypesDemo();
+
+            typesDemo.Typetest();
         }
     }
 }

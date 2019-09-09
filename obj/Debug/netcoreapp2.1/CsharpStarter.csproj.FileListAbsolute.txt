@@ -9,3 +9,14 @@ D:\AzDev\csharp\CsharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.AssemblyInfo
 D:\AzDev\csharp\CsharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.AssemblyInfo.cs
 D:\AzDev\csharp\CsharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.dll
 D:\AzDev\csharp\CsharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.pdb
+D:\github\CSharpStarter\bin\Debug\netcoreapp2.1\CsharpStarter.deps.json
+D:\github\CSharpStarter\bin\Debug\netcoreapp2.1\CsharpStarter.runtimeconfig.json
+D:\github\CSharpStarter\bin\Debug\netcoreapp2.1\CsharpStarter.runtimeconfig.dev.json
+d:\github\CSharpStarter\bin\Debug\netcoreapp2.1\CsharpStarter.dll
+d:\github\CSharpStarter\bin\Debug\netcoreapp2.1\CsharpStarter.pdb
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.csprojAssemblyReference.cache
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.csproj.CoreCompileInputs.cache
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.AssemblyInfoInputs.cache
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.AssemblyInfo.cs
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.dll
+d:\github\CSharpStarter\obj\Debug\netcoreapp2.1\CsharpStarter.pdb

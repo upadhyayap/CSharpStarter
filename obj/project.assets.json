@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\oneDriveOnline\\OneDrive - Microsoft\\AzDev\\desktopshare\\CsharpStarter\\CsharpStarter.csproj",
+      "projectUniqueName": "D:\\github\\CSharpStarter\\CsharpStarter.csproj",
       "projectName": "CsharpStarter",
-      "projectPath": "D:\\oneDriveOnline\\OneDrive - Microsoft\\AzDev\\desktopshare\\CsharpStarter\\CsharpStarter.csproj",
+      "projectPath": "D:\\github\\CSharpStarter\\CsharpStarter.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\oneDriveOnline\\OneDrive - Microsoft\\AzDev\\desktopshare\\CsharpStarter\\obj\\",
+      "outputPath": "D:\\github\\CSharpStarter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
