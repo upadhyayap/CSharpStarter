@@ -8,8 +8,10 @@ namespace CsharpStarter
     {
         static void Main(string[] args)
         {
-            ArrayTest arrayTest = new ArrayTest();
-            arrayTest.printArray();
+            // ArrayTest arrayTest = new ArrayTest();
+            // arrayTest.printArray();
+
+            
         }
     }
 }
