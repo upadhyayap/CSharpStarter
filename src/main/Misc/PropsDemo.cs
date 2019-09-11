@@ -40,7 +40,7 @@ namespace CSharpStarter.src.main.Misc
             this.Price = Price;
         }
 
-        // Product () {}
+         public Product () {}
 
         public static List<Product> GetSampleProduct(){
             return new List<Product> {

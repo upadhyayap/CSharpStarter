@@ -40,7 +40,7 @@ namespace CsharpStarter
             // Console.WriteLine($"my name is {name}");
 
             // AutoImplementedProps.ListProducts();
-            Product product = new Product {Name = "comp", Price = 100};
+            Product product = new Product {Name = "comp", Price = 100}; // This call calls the default constructor for Product class and then calls setters for props
             Console.Write(product.Name);
         }
     }
