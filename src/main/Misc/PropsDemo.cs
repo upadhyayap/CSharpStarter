@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+
+namespace CSharpStarter.src.main.Misc
+{
+    class OldProps {
+        private string name;
+        
+        public string Name {
+            get { 
+                return name;
+            }
+            set {
+                name = value;
+            }
+        }
+    }
+
+    class NewProps {
+        // private string name;
+        public string Name {get; private set;}
+    }
+
+    class AutoImplementedProps {
+        public static void ListProducts() {
+            foreach (var item in Product.GetSampleProduct())
+            {
+                Console.WriteLine($" Price of {item.Name} is {item.Price}");
+            }
+        }
+    }
+
+    class Product {
+        
+        public string Name {get;set;}
+        public decimal Price{get;set;}
+
+        public Product(string name, decimal Price) {
+            this.Name = name;
+            this.Price = Price;
+        }
+
+        // Product () {}
+
+        public static List<Product> GetSampleProduct(){
+            return new List<Product> {
+                new Product {Name = "Computer", Price = 100},
+                new Product {Name = "Mouse", Price = 10}
+            };
+        }
+
+    }
+
+}

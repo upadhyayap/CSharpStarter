@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using CsharpStarter.src.main.Array;
 using CsharpStarter.src.main.Types;
+using CSharpStarter.src.main.Misc;
 
 namespace CsharpStarter
 {
@@ -11,9 +14,34 @@ namespace CsharpStarter
             // ArrayTest arrayTest = new ArrayTest();
             // arrayTest.printArray();
 
-            TypesDemo typesDemo = new TypesDemo();
+            // TypesDemo typesDemo = new TypesDemo();
 
-            typesDemo.Typetest();
+            // typesDemo.Typetest();
+
+            // OldProps old = new OldProps();
+            // old.Name = "Anand";
+            // Console.WriteLine(old.Name);
+
+            // NewProps newProps = new NewProps();
+            // newProps.Name = "Sardar";
+            // Console.WriteLine(newProps.Name);
+
+            // ArrayList names = new ArrayList();
+            // names.Add("manish");
+            // ExpBodiedMember expBodied = new ExpBodiedMember();
+            // expBodied.Names = names;
+
+            // Console.WriteLine(expBodied.Count);
+            //  var name  = "Anand";
+            // var desg = "microsoft";
+
+            // Console.WriteLine("My name is " + name + " and i work for " + desg);
+
+            // Console.WriteLine($"my name is {name}");
+
+            // AutoImplementedProps.ListProducts();
+            Product product = new Product {Name = "comp", Price = 100};
+            Console.Write(product.Name);
         }
     }
 }

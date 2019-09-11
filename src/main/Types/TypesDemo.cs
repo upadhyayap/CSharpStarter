@@ -10,6 +10,7 @@ namespace CsharpStarter.src.main.Types
         {
             var book = new { title = "c# in depth", author= "Anand"};
             var employee = (name : "Anand", designation: "SE");
+            
 
             Console.WriteLine(book.title);
             Console.WriteLine(employee.name);
