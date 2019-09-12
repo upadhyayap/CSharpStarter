@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CsharpStarter.src.main.Array;
 using CsharpStarter.src.main.Types;
 using CSharpStarter.src.main.Misc;
+using CSharpStarter.src.main.Collections.Sorting;
 
 namespace CsharpStarter
 {
@@ -40,8 +41,14 @@ namespace CsharpStarter
             // Console.WriteLine($"my name is {name}");
 
             // AutoImplementedProps.ListProducts();
-            Product product = new Product {Name = "comp", Price = 100}; // This call calls the default constructor for Product class and then calls setters for props
-            Console.Write(product.Name);
+            // Product product = new Product {Name = "comp", Price = 100}; // This call calls the default constructor for Product class and then calls setters for props
+            // Product product = new Product(name: "comp", Price: 100);
+            // Console.Write(product.Name);
+
+            ProductSorting productSorting = new ProductSorting();
+            productSorting.sort();
+            productSorting.sortWithDelegate();
+
         }
     }
 }

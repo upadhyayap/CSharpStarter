@@ -23,7 +23,7 @@ namespace CSharpStarter.src.main.Misc
 
     class AutoImplementedProps {
         public static void ListProducts() {
-            foreach (var item in Product.GetSampleProduct())
+            foreach (var item in Product.GetSampleProducts())
             {
                 Console.WriteLine($" Price of {item.Name} is {item.Price}");
             }
@@ -32,6 +32,7 @@ namespace CSharpStarter.src.main.Misc
 
     class Product {
         
+        // public readonly string name
         public string Name {get;set;}
         public decimal Price{get;set;}
 
@@ -42,7 +43,7 @@ namespace CSharpStarter.src.main.Misc
 
          public Product () {}
 
-        public static List<Product> GetSampleProduct(){
+        public static List<Product> GetSampleProducts(){
             return new List<Product> {
                 new Product {Name = "Computer", Price = 100},
                 new Product {Name = "Mouse", Price = 10}
