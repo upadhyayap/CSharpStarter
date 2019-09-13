@@ -46,9 +46,11 @@ namespace CsharpStarter
             // Console.Write(product.Name);
 
             ProductSorting productSorting = new ProductSorting();
-            productSorting.sort();
-            productSorting.sortWithDelegate();
-
+            // productSorting.sort();
+            // productSorting.sortWithDelegate();
+            // productSorting.SortByLambda();
+            // productSorting.PrintWithoutSort();
+            productSorting.filter();
         }
     }
 }

@@ -34,9 +34,9 @@ namespace CSharpStarter.src.main.Misc
         
         // public readonly string name
         public string Name {get;set;}
-        public decimal Price{get;set;}
+        public decimal? Price{get;set;}
 
-        public Product(string name, decimal Price) {
+        public Product(string name, decimal? Price = null) {
             this.Name = name;
             this.Price = Price;
         }
