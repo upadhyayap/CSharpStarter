@@ -5,6 +5,8 @@ using CsharpStarter.src.main.Array;
 using CsharpStarter.src.main.Types;
 using CSharpStarter.src.main.Misc;
 using CSharpStarter.src.main.Collections.Sorting;
+using CSharpStarter.src.main.LINQ;
+using CSharpStarter.src.main.Delegate;
 
 namespace CsharpStarter
 {
@@ -45,12 +47,63 @@ namespace CsharpStarter
             // Product product = new Product(name: "comp", Price: 100);
             // Console.Write(product.Name);
 
-            ProductSorting productSorting = new ProductSorting();
+            // ProductSorting productSorting = new ProductSorting();
             // productSorting.sort();
             // productSorting.sortWithDelegate();
             // productSorting.SortByLambda();
             // productSorting.PrintWithoutSort();
-            productSorting.filter();
+            // productSorting.filter();
+            // LinqStart linqStart = new LinqStart();
+            // linqStart.filter();
+            // linqStart.filterWithJoin();
+            
+            // Delegate
+
+            DelDemo delDemo = new DelDemo();
+            // Printer pr = new Printer(delDemo.ConsolePrinter);
+            // Printer pr1 = delegate(string x) {
+            //     Console.WriteLine(x);
+            // };
+
+            //  delDemo.print(pr);
+            // Implicit conversion from method group to delegate
+            // delDemo.print(delDemo.ConsolePrinter);
+            // passig delegate as lambda
+            // delDemo.print((s) => Console.WriteLine("Delegate through lambda"));
+            // passing Delegate as a anonymous method
+            // delDemo.print(delegate(string x) {
+            //     Console.WriteLine(x);
+            // });
+            
+            // Program.DemostrateType<int>();
+
+            // int ret;
+            // int.TryParse("1", out ret);
+            // Console.WriteLine(ret);
+            
+            List<int> List = new List<int>();
+
+            
+        }
+
+        static void DemostrateType<x>() {
+            Console.WriteLine(typeof(List<>));
+        }
+
+        static void CustomrIterator() {
+            IEnumerable<int> iterable = CreateEnumerable();
+            IEnumerator<int> iterator = iterable.GetEnumerator();
+            Console.WriteLine("Starting to iterate");
+            while (true) {
+                Console.WriteLine("Calling MoveNext()...");
+                bool result = iterator.MoveNext();
+                Console.WriteLine("... MoveNext result={0}", result);
+                if (!result) {
+                    break;
+                }
+                Console.WriteLine("Fetching Current...");
+                Console.WriteLine("... Current result={0}", iterator.Current);
+            }
         }
     }
 }

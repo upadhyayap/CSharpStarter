@@ -1,3 +1,5 @@
+using System.Threading;
+using System.Runtime.CompilerServices;
 using System;
 using System.Collections.Generic;
 
@@ -36,20 +38,26 @@ namespace CSharpStarter.src.main.Misc
         public string Name {get;set;}
         public decimal? Price{get;set;}
 
-        public Product(string name, decimal? Price = null) {
+        public int supplierId;
+        public int SupplierId{get;set;}
+
+        public Product(string name, decimal? Price = null, int supId = -1) {
             this.Name = name;
             this.Price = Price;
+            this.supplierId = supId;
         }
 
          public Product () {}
 
         public static List<Product> GetSampleProducts(){
             return new List<Product> {
-                new Product {Name = "Computer", Price = 100},
-                new Product {Name = "Mouse", Price = 10}
+                new Product {Name = "Computer", Price = 100, SupplierId = 1},
+                new Product {Name = "Mouse", Price = 10, SupplierId = 2}
             };
         }
 
     }
+    
+    
 
 }
