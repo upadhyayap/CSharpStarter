@@ -10,7 +10,6 @@
     <Folder Include="src\main\Collections\" />
     <Folder Include="src\main\Misc\" />
     <Folder Include="src\main\Attribute\" />
-    <Folder Include="src\main\Threads\" />
   </ItemGroup>
 
 </Project>

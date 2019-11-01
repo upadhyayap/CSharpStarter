@@ -9,6 +9,7 @@ using CSharpStarter.src.main.LINQ;
 using CSharpStarter.src.main.Delegate;
 using System.Collections.ObjectModel;
 using CSharpStarter.src.main.Threads;
+using CsharpStarter.src.main.Threads;
 
 namespace CsharpStarter
 {
@@ -87,8 +88,13 @@ namespace CsharpStarter
 
             ThreadDemo threadDemo = new ThreadDemo();
             // threadDemo.LegacyWay();
-            threadDemo.AsyncWay();
+            //threadDemo.AsyncWay();
 
+            // BeginEnd beginEnd = new BeginEnd();
+            // beginEnd.doWorkDelegateAsyncTest();
+
+
+            
         }
 
         static void DemostrateType<x>() {
