@@ -7,6 +7,8 @@ using CSharpStarter.src.main.Misc;
 using CSharpStarter.src.main.Collections.Sorting;
 using CSharpStarter.src.main.LINQ;
 using CSharpStarter.src.main.Delegate;
+using System.Collections.ObjectModel;
+using CSharpStarter.src.main.Threads;
 
 namespace CsharpStarter
 {
@@ -83,14 +85,17 @@ namespace CsharpStarter
             
             List<int> List = new List<int>();
 
-            
+            ThreadDemo threadDemo = new ThreadDemo();
+            // threadDemo.LegacyWay();
+            threadDemo.AsyncWay();
+
         }
 
         static void DemostrateType<x>() {
             Console.WriteLine(typeof(List<>));
         }
 
-        static void CustomrIterator() {
+      /*  static void CustomrIterator() {
             IEnumerable<int> iterable = CreateEnumerable();
             IEnumerator<int> iterator = iterable.GetEnumerator();
             Console.WriteLine("Starting to iterate");
@@ -104,6 +109,6 @@ namespace CsharpStarter
                 Console.WriteLine("Fetching Current...");
                 Console.WriteLine("... Current result={0}", iterator.Current);
             }
-        }
+        }*/
     }
 }
