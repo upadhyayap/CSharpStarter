@@ -43,7 +43,7 @@ namespace CSharpStarter.src.main.Threads
       }  
   
         static async void CallMethod()  {  
-            string filePath = "D:\\ThreadDemo.txt";  
+            string filePath = "/tmp/ThreadDemo.txt";  
             Task<int> task = ReadFile(filePath);  
     
             Console.WriteLine(" Other Work 1");  

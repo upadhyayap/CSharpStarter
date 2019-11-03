@@ -10,6 +10,7 @@ using CSharpStarter.src.main.Delegate;
 using System.Collections.ObjectModel;
 using CSharpStarter.src.main.Threads;
 using CsharpStarter.src.main.Threads;
+using System.Threading;
 
 namespace CsharpStarter
 {
@@ -17,6 +18,7 @@ namespace CsharpStarter
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Main Thread starting with Id {Thread.CurrentThread.ManagedThreadId}");
             // ArrayTest arrayTest = new ArrayTest();
             // arrayTest.printArray();
 
@@ -59,7 +61,7 @@ namespace CsharpStarter
             // LinqStart linqStart = new LinqStart();
             // linqStart.filter();
             // linqStart.filterWithJoin();
-            
+
             // Delegate
 
             DelDemo delDemo = new DelDemo();
@@ -88,13 +90,15 @@ namespace CsharpStarter
 
             ThreadDemo threadDemo = new ThreadDemo();
             // threadDemo.LegacyWay();
-            //threadDemo.AsyncWay();
+            // threadDemo.AsyncWay();
 
             // BeginEnd beginEnd = new BeginEnd();
             // beginEnd.doWorkDelegateAsyncTest();
 
+            AsyncIO asyncIO = new AsyncIO("http://google.com");
+            asyncIO.AsyncDownload();
 
-            
+            Console.WriteLine($"Main Thread End with Id {Thread.CurrentThread.ManagedThreadId}");
         }
 
         static void DemostrateType<x>() {

@@ -1,36 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\CSharpStarter\\CsharpStarter.csproj": {}
+    "/Users/anupadh/learning/csharp/CSharpStarter/CsharpStarter.csproj": {}
   },
   "projects": {
-    "D:\\github\\CSharpStarter\\CsharpStarter.csproj": {
+    "/Users/anupadh/learning/csharp/CSharpStarter/CsharpStarter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CSharpStarter\\CsharpStarter.csproj",
+        "projectUniqueName": "/Users/anupadh/learning/csharp/CSharpStarter/CsharpStarter.csproj",
         "projectName": "CsharpStarter",
-        "projectPath": "D:\\github\\CSharpStarter\\CsharpStarter.csproj",
-        "packagesPath": "C:\\Users\\anupadh\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CSharpStarter\\obj\\",
+        "projectPath": "/Users/anupadh/learning/csharp/CSharpStarter/CsharpStarter.csproj",
+        "packagesPath": "/Users/anupadh/.nuget/packages/",
+        "outputPath": "/Users/anupadh/learning/csharp/CSharpStarter/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anupadh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/anupadh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -41,19 +34,23 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
+        "netcoreapp3.0": {
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
