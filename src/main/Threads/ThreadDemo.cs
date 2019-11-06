@@ -12,6 +12,10 @@ namespace CSharpStarter.src.main.Threads
         public void LegacyWay(){
             Thread t1 = new Thread(new ThreadStart(new MyThread().Run));
             t1.Start();
+
+            Thread t2 = new Thread(new ThreadStart(new MyThread().Run));
+            t2.Start();
+            t2.IsBackground = true;
             // t1.Join();
             Console.WriteLine("out of calling method");
         }
@@ -23,6 +27,7 @@ namespace CSharpStarter.src.main.Threads
     }
 
     public class MyThread {
+        private Object monitor = new Object();
         public void Run() {
             Thread.CurrentThread.Name = "My Thread";
             Console.WriteLine(Thread.CurrentThread.Name);
@@ -31,6 +36,12 @@ namespace CSharpStarter.src.main.Threads
             // foreach (var item in en){
             //     Console.WriteLine(item);
             // }
+
+            lock (monitor)
+            {
+                // do critical section stuff
+            }
+
             Thread.Sleep(10);
             Console.WriteLine($"out of {Thread.CurrentThread.Name}");
         }
@@ -73,4 +84,6 @@ namespace CSharpStarter.src.main.Threads
             return length;  
         }  
     }
+
+
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading.Tasks;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using CsharpStarter.src.main.Array;
@@ -95,8 +96,18 @@ namespace CsharpStarter
             // BeginEnd beginEnd = new BeginEnd();
             // beginEnd.doWorkDelegateAsyncTest();
 
-            AsyncIO asyncIO = new AsyncIO("http://google.com");
-            asyncIO.AsyncDownload();
+            // AsyncIO asyncIO = new AsyncIO("http://google.com");
+            // asyncIO.AsyncDownload();
+
+            // ThreadPoolDemo threadPoolDemo = new ThreadPoolDemo();
+            // ManualResetEvent manualSignal = new ManualResetEvent(false);
+            // threadPoolDemo.ManualSignal = manualSignal;
+            // threadPoolDemo.DoWorkInPool();
+            // manualSignal.WaitOne();
+
+            TaskDemo taskDemo = new TaskDemo();
+            var task = taskDemo.DoWorkInSimpleTask();
+            task.Wait();
 
             Console.WriteLine($"Main Thread End with Id {Thread.CurrentThread.ManagedThreadId}");
         }
