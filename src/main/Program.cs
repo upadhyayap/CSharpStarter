@@ -89,7 +89,7 @@ namespace CsharpStarter
             
             List<int> List = new List<int>();
 
-            ThreadDemo threadDemo = new ThreadDemo();
+            // ThreadDemo threadDemo = new ThreadDemo();
             // threadDemo.LegacyWay();
             // threadDemo.AsyncWay();
 
@@ -105,9 +105,17 @@ namespace CsharpStarter
             // threadPoolDemo.DoWorkInPool();
             // manualSignal.WaitOne();
 
-            TaskDemo taskDemo = new TaskDemo();
-            var task = taskDemo.DoWorkInSimpleTask();
-            task.Wait();
+            // TaskDemo taskDemo = new TaskDemo();
+            // taskDemo.DoWorkInSimpleTask();
+
+            // AsyncIOWithTask asyncIOWithTask = new AsyncIOWithTask {Url = "http://google.com"};
+            // asyncIOWithTask.Download();
+            // asyncIOWithTask.DoInParallel();
+
+            // AsyncAwait asyncAwaitLongOne = new AsyncAwait {Url = "https://go.microsoft.com/fwlink/p/?linkid=845299"};
+            AsyncAwait asyncAwaitShortOne = new AsyncAwait {Url = "https://google.com"};
+            Task<int> asyncResult =  asyncAwaitShortOne.download();
+            asyncResult.Wait();
 
             Console.WriteLine($"Main Thread End with Id {Thread.CurrentThread.ManagedThreadId}");
         }
